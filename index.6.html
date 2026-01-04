@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Pm Pranta </title>
+        <link rel="icon" href="pm-logo.svg" type="image/svg+xml">
+        <link href="https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            'bright-brown': '#583D2D',
+                            'cream': '#F8F4F1',
+                            'deep-dark': '#1A120B'
+                        },
+                        fontFamily: {
+                            manuale: ['Manuale', 'serif'],
+                        }
+                    }
+                }
+            }
+
+            function toggleTheme() {
+                document.documentElement.classList.toggle('dark');
+            }
+        </script>
+        <style>
+            body {
+                font-family: 'Manuale', serif;
+                transition: background-color 0.3s ease;
+                overflow-x: hidden;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .skill-badge:hover {
+                transform: translateY(-5px);
+                transition: all 0.3s ease;
+            }
+        </style>
+    </head>
+
+    <body class="bg-cream dark:bg-deep-dark text-gray-900 dark:text-gray-100">
+
+        <header class="bg-bright-brown text-white px-8 md:px-24 py-12 rounded-b-[40px] shadow-2xl transition-colors">
+            <nav class="flex justify-between items-center mb-16 animate__animated animate__fadeInDown">
+                <h2 class="text-2xl font-bold">Pm Pranta Portfolio</h2>
+                <div class="flex items-center space-x-6">
+                    <a href="#about" class="hover:text-orange-200 transition">About</a>
+                    <a href="#contact" class="hover:text-orange-200 transition">Contact</a>
+                    <button onclick="toggleTheme()" class="bg-white/20 p-2 rounded-full hover:bg-white/40 transition">
+                        <i class="fas fa-adjust"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-3/5 space-y-6 animate__animated animate__fadeInLeft">
+                    <h1 class="text-5xl font-extrabold leading-tight">Hello, I'm <br><span
+                            class="text-orange-200">Pranta Mohajan</span> 👋
+                    </h1>
+                    <p class="text-lg text-gray-200 leading-relaxed">
+                        20-year-old BSc in CSE student at Premier University,
+                        Chittagong. Passionate about clean code, Python, and data
+                        science.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="tel:01886630163" class="text-2xl hover:scale-110 transition"><i
+                                class="fas fa-phone"></i></a>
+                        <a href="https://github.com/heyiampm" target="_blank"
+                            class="text-2xl hover:scale-110 transition"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pmpranta/" target="_blank"
+                            class="text-2xl hover:scale-110 transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Pmpranta" target="_blank" class="text-2xl hover:scale-110 transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://codeforces.com/profile/prantamohajn" target="_blank"
+                            class="text-2xl hover:scale-110 transition text-orange-300 font-bold">CF</a>
+                    </div>
+                    <div class="pt-4">
+                        <a href="#contact"
+                            class="bg-white text-bright-brown px-8 py-3 rounded-lg font-bold hover:bg-orange-100 transition shadow-lg inline-block animate__animated animate__pulse animate__infinite">Contact
+                            Me</a>
+                    </div>
+                </div>
+
+                <div class="md:w-2/5 flex justify-center animate__animated animate__zoomIn">
+                    <img src="pm.jpg" alt="Pranta Mohajan"
+                        class="w-72 h-84 object-cover rounded-[2rem] border-8 border-white/20 shadow-2xl">
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="px-8 md:px-24 py-20">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-6 border-b-4 border-bright-brown inline-block">
+                        About Me</h2>
+                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                        I’m a BSc in Computer Science And Engineering student at
+                        <strong>Premier University</strong>. I am passionate about
+                        writing clean, efficient code and building projects that
+                        solve real-world problems. I enjoy working with Python and
+                        constantly explore new libraries to deepen my knowledge.
+                    </p>
+
+                    <h3 class="mt-8 font-bold text-xl mb-4">Programming Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="skill-badge bg-bright-brown text-white px-3 py-1 rounded shadow-md flex items-center gap-2">
+                            <i class="devicon-python-plain"></i> Python
+                        </span>
+                        <span
+                            class="skill-badge bg-bright-brown text-white px-3 py-1 rounded shadow-md flex items-center gap-2">
+                            <i class="devicon-cplusplus-plain"></i> C++
+                        </span>
+                        <span
+                            class="skill-badge bg-bright-brown text-white px-3 py-1 rounded shadow-md flex items-center gap-2">
+                            <i class="devicon-java-plain"></i> Java
+                        </span>
+                        <span
+                            class="skill-badge bg-bright-brown text-white px-3 py-1 rounded shadow-md flex items-center gap-2">
+                            <i class="devicon-javascript-plain"></i>
+                            JavaScript
+                        </span>
+                        <span
+                            class="skill-badge bg-bright-brown text-white px-3 py-1 rounded shadow-md flex items-center gap-2">
+                            <i class="devicon-github-original"></i> Git/GitHub
+                        </span>
+                    </div>
+
+                    <h3 class="mt-6 font-bold text-xl mb-4">Data Science</h3>
+                    <div class="flex flex-wrap gap-2 text-sm">
+                        <span class="skill-badge border border-bright-brown px-3 py-1 rounded flex items-center gap-2">
+                            <i class="devicon-pandas-plain"></i> Pandas
+                        </span>
+                        <span class="skill-badge border border-bright-brown px-3 py-1 rounded flex items-center gap-2">
+                            <i class="devicon-numpy-plain"></i> NumPy
+                        </span>
+                        <span class="skill-badge border border-bright-brown px-3 py-1 rounded flex items-center gap-2">
+                            <i class="devicon-matplotlib-plain"></i>
+                            Matplotlib
+                        </span>
+                        <span class="skill-badge border border-bright-brown px-3 py-1 rounded flex items-center gap-2">
+                            <i class="fas fa-chart-line"></i> Seaborn
+                        </span>
+                    </div>
+                </div>
+
+                <div class="space-y-4" data-aos="fade-left">
+                    <div
+                        class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border-l-8 border-bright-brown hover:shadow-xl transition-shadow">
+                        <p class="text-sm font-bold uppercase text-gray-500">
+                            Education</p>
+                        <p class="text-lg">BSc in CSE, Premier University</p>
+                    </div>
+                    <div
+                        class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border-l-8 border-bright-brown hover:shadow-xl transition-shadow">
+                        <p class="text-sm font-bold uppercase text-gray-500">
+                            Location</p>
+                        <p class="text-lg">Chittagong, Bangladesh</p>
+                    </div>
+                    <div
+                        class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border-l-8 border-bright-brown hover:shadow-xl transition-shadow">
+                        <p class="text-sm font-bold uppercase text-gray-500">Contact
+                        </p>
+                        <p class="text-lg">01886630163</p>
+                        <p class="text-md text-gray-500">heyiampm@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="px-8 md:px-24 py-20 bg-gray-100 dark:bg-gray-900 transition-colors">
+            <h2 class="text-3xl font-bold mb-10 text-center" data-aos="fade-up">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto">
+                <form action="https://formspree.io/f/heyiampm@gmail.com" method="POST" class="space-y-4"
+                    data-aos="slide-up">
+                    <input type="hidden" name="_next" value="https://heyiampm.github.io/">
+
+                    <input type="text" name="name" placeholder="Your Name" required
+                        class="w-full p-4 rounded-xl border dark:bg-gray-800 dark:border-gray-700 outline-none focus:ring-2 focus:ring-bright-brown">
+                    <input type="email" name="email" placeholder="Your Email" required
+                        class="w-full p-4 rounded-xl border dark:bg-gray-800 dark:border-gray-700 outline-none focus:ring-2 focus:ring-bright-brown">
+                    <textarea rows="4" name="message" placeholder="Message" required
+                        class="w-full p-4 rounded-xl border dark:bg-gray-800 dark:border-gray-700 outline-none focus:ring-2 focus:ring-bright-brown"></textarea>
+
+                    <button type="submit"
+                        class="w-full bg-bright-brown text-white py-4 rounded-xl font-bold hover:opacity-90 transition transform hover:scale-105 shadow-lg">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="py-12 px-8 text-center border-t border-gray-200 dark:border-gray-800">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://www.facebook.com/pranta.mahajana"
+                    class="text-xl hover:text-blue-600 transition transform hover:rotate-12"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/prantapm/"
+                    class="text-xl hover:text-pink-500 transition transform hover:rotate-12"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.codechef.com/users/pm_pranta_0"
+                    class="text-xl hover:text-orange-500 transition transform hover:rotate-12"><i
+                        class="fas fa-code"></i></a>
+            </div>
+            <p>© 2024 Pranta Mohajan | Chittagong, Bangladesh</p>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true,
+                easing: 'ease-in-out',
+            });
+        </script>
+    </body>
+
+</html>
